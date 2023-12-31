@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageRV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="5dp"
+        android:src="@drawable/baseline_contact_phone_24"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/nameRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageRV"
+        app:layout_constraintTop_toTopOf="@id/imageRV"
+        tools:text="sherif"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/phoneRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageRV"
+        app:layout_constraintTop_toBottomOf="@id/nameRV"
+        tools:text="sherif"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/descriptionRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageRV"
+        app:layout_constraintTop_toBottomOf="@id/phoneRV"
+        tools:text="sherif"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
